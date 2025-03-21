@@ -12,6 +12,7 @@ public class MenuCalc {
         int radius = scanner.nextInt();
 
         do {
+            @SuppressWarnings("unused")
             String pause;
             ClearConsole.clearconsole(); // Clear the console before menu
             System.out.println("1. Circumference");
