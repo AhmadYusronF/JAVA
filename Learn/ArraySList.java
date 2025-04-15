@@ -18,11 +18,11 @@ public class ArraySList {
         while (true) {
             System.out.print("Enter a number (0 to stop): ");
             int adput = scanner.nextInt(); // Read user input
+            nulist.add(adput); // Add the input value to the ArrayList
 
             if (adput == 0) { // If input is 0, exit the loop
                 break;
             }
-            nulist.add(adput); // Add the input value to the ArrayList
         }
 
         // Print all elements of the ArrayList in a single line, separated by "--"
