@@ -1,4 +1,4 @@
-package Learn;
+
 
 import java.util.Scanner; // Importing Scanner to handle user input
 

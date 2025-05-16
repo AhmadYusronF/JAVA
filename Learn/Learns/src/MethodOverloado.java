@@ -1,4 +1,3 @@
-package Learn;
 
 public class MethodOverloado {
     // Method overloading means defining multiple methods with the same name but
