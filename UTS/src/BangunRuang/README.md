@@ -1,17 +1,37 @@
-## Getting Started
+# Kalkulator Bangun Ruang 🧮
+## Deskripsi 📖
+Kalkulator Bangun Ruang adalah sebuah program sederhana yang digunakan untuk menghitung volume dan luas permukaan dari berbagai bangun ruang tiga dimensi seperti:
+- Kubus
+- Balok
+- Bola
+- Silinder ( Tabung )
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Pengguna cukup memilih jenis bangun ruang, lalu memasukkan nilai-nilai seperti panjang, lebar, tinggi, atau jari-jari, dan program akan menampilkan hasil perhitungannya.
+## 📁 Struktur Folder
+```bash
+BangunRuang/
+├── Calculation.java
+├── Main.java
+└── README.md
+```
+- Calculation.java
 
-## Folder Structure
+Berfungsi sebagai kelas inti perhitungan, yang berisi metode-metode untuk menghitung volume dan luas permukaan dari berbagai bangun ruang seperti:
 
-The workspace contains two folders by default, where:
+hitungLuasPermukaanBalok
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+hitungVolumeBalok
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+dan lain-lain
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Kelas ini menerima input dari pengguna (melalui kelas Main) dan mengembalikan hasil perhitungan yang akurat. Semua logika matematika ditempatkan di sini untuk menjaga keterpisahan antara logika perhitungang dan UI menu.
+
+- Main.java
+
+Merupakan entry point atau titik masuk utama dari program.
+Di sini pengguna akan berinteraksi dengan program, memilih jenis bangun ruang, memasukkan input (seperti panjang, jari-jari, tinggi, dsb), dan menerima hasil perhitungan yang diperoleh dari pemanggilan metode di `Calculation.java`.
+
+
 
 ## Dependency Management
 
