@@ -236,13 +236,17 @@ Menampilkan pilihan untuk menghitung volume atau luas permukaan silinder. Penggu
 
 ```
 if (subPilihan == 1) {
-                    System.out.println("Volume Silinder: " + silinder.hitungVolumeSilinder());
+                    System.out.println("Volume Silinder: ");
+                    System.out.printf("%.2f cm%n", silinder.hitungVolumeSilinder());
                 } else if (subPilihan == 2) {
-                    System.out.println("Luas Permukaan Silinder: " + silinder.hitungLuasPermukaanSilinder());
+                    System.out.println("Luas Permukaan Silinder: ");
+                    System.out.printf("%.2f cm%n", silinder.hitungLuasPermukaanSilinder());
                 }
 ```
-
 kondisi untuk menghitung volume atau luas permukaan silinder berdasarkan pilihan pengguna. Memanggil metode yang sesuai dari objek silinder dan menampilkan hasilnya.
+Menampilkan hasil dengan format dua angka desimal.
+
+
 
 # 4️⃣ Case 4 - Bola
 
@@ -273,13 +277,16 @@ Menampilkan pilihan untuk menghitung volume atau luas permukaan bola. Pengguna d
 
 ```
 if (subPilihan == 1) {
-                    System.out.println("Volume Bola: " + bola.hitungVolumeBola());
+                    System.out.println("Volume bola: ");
+                    System.out.printf("%.2f cm%n", bola.hitungVolumeBola());
                 } else if (subPilihan == 2) {
-                    System.out.println("Luas Permukaan Bola: " + bola.hitungLuasPermukaanBola());
+                    System.out.println("Luas Permukaan bola: ");
+                    System.out.printf("%.2f cm%n", bola.hitungLuasPermukaanBola());
                 }
 ```
-
 kondisi untuk menghitung volume atau luas permukaan bola berdasarkan pilihan pengguna. Memanggil metode yang sesuai dari objek bola dan menampilkan hasilnya.
+Menampilkan hasil dengan format dua angka desimal.
+
 
 # 5️⃣ Case 5 - Keluar
 
