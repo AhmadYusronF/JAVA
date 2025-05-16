@@ -8,39 +8,36 @@ public class Calculation {
     // Balok
     // Volume = panjang * lebar * tinggi
     // Luas Permukaan = 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi)
-
+    
     // Silinder
     // Volume = π * jariJari^2 * tinggi
     // Luas Permukaan = 2 * π * jariJari * (jariJari + tinggi)
-
+    
     // Bola
     // Volume = (4/3) * π * jariJari^3
     // Luas Permukaan = 4 * π * jariJari^2
-
+    
     int sisi;
     double panjang, lebar, tinggi, jariJari;
-
-    // Konstruktor untuk bola (menggunakan jari-jari)
-    public Calculation(double jariJari) {
-        this.jariJari = jariJari;
+    
+    // Konstruktor untuk kubus (menggunakan sisi)
+    public Calculation(int sisi) {
+        this.sisi = sisi;
     }
-
-    // Konstruktor untuk silinder (menggunakan tinggi dan jari-jari)
-    public Calculation(double tinggi, double jariJari) {
-        this.tinggi = tinggi;
-        this.jariJari = jariJari;
-    }
-
     // Konstruktor untuk balok (menggunakan panjang, lebar, dan tinggi)
     public Calculation(double panjang, double lebar, double tinggi) {
         this.panjang = panjang;
         this.lebar = lebar;
         this.tinggi = tinggi;
     }
-
-    // Konstruktor untuk kubus (menggunakan sisi)
-    public Calculation(int sisi) {
-        this.sisi = sisi;
+    // Konstruktor untuk silinder (menggunakan tinggi dan jari-jari)
+    public Calculation(double tinggi, double jariJari) {
+        this.tinggi = tinggi;
+        this.jariJari = jariJari;
+    }
+    // Konstruktor untuk bola (menggunakan jari-jari)
+    public Calculation(double jariJari) {
+        this.jariJari = jariJari;
     }
 
     // Volume Kubus
