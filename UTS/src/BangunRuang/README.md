@@ -75,7 +75,7 @@ package BangunRuang;
 Menyatakan bahwa file ini berada dalam package BangunRuang
 
 ```
-import java.util.input;
+import java.util.Scanner;
 ```
 
 Mengimpor kelas input dari paket java.util untuk membaca input dari pengguna.
@@ -144,6 +144,7 @@ Calculation kubus = new Calculation(sisi);
 ```
 
 Membuat objek kubus dari kelas Calculation dengan parameter sisi yang dimasukkan oleh pengguna. Ini akan digunakan untuk menghitung volume dan luas permukaan kubus.
+
 ```
     System.out.println("1. Hitung Volume");
     System.out.println("2. Hitung Luas Permukaan");
@@ -152,8 +153,6 @@ Membuat objek kubus dari kelas Calculation dengan parameter sisi yang dimasukkan
 ```
 
 Menampilkan pilihan untuk menghitung volume atau luas permukaan kubus. Pengguna diminta untuk memilih salah satu dari dua opsi ini.
-
-
 
 ```
 if (subPilihan == 1) {
@@ -184,6 +183,7 @@ Menampilkan dan meminta input panjang, lebar, dan tinggi balok dari pengguna.
 ```
     Calculation balok = new Calculation(panjang, lebar, tinggi);
 ```
+
 Membuat objek balok dari kelas Calculation dengan parameter panjang, lebar, dan tinggi yang dimasukkan oleh pengguna. Ini akan digunakan untuk menghitung volume dan luas permukaan balok.
 
 ```
@@ -192,6 +192,7 @@ Membuat objek balok dari kelas Calculation dengan parameter panjang, lebar, dan 
     System.out.print("Pilihan Anda: ");
     subPilihan = input.nextInt();
 ```
+
 Menampilkan pilihan untuk menghitung volume atau luas permukaan balok. Pengguna diminta untuk memilih salah satu dari dua opsi ini.
 
 ```
@@ -205,7 +206,9 @@ if (subPilihan == 1) {
 kondisi untuk menghitung volume atau luas permukaan balok berdasarkan pilihan pengguna. Memanggil metode yang sesuai dari objek balok dan menampilkan hasilnya.
 
 # 3️⃣ Case 3 - Silinder
+
 mendeklarasikan case 3 untuk Silinder.
+
 ```
     System.out.println("=== Silinder ===");
     System.out.print("Masukkan jari-jari: ");
@@ -213,18 +216,22 @@ mendeklarasikan case 3 untuk Silinder.
     System.out.print("Masukkan tinggi: ");
     double tinggiSilinder = input.nextDouble();
 ```
+
 Menampilkan dan meminta input jari-jari dan tinggi silinder dari pengguna.
 
 ```
     Calculation silinder = new Calculation(jariJari, tinggiSilinder);
 ```
+
 Membuat objek silinder dari kelas Calculation dengan parameter jari-jari dan tinggi yang dimasukkan oleh pengguna. Ini akan digunakan untuk menghitung volume dan luas permukaan silinder.
+
 ```
     System.out.println("1. Hitung Volume");
     System.out.println("2. Hitung Luas Permukaan");
     System.out.print("Pilihan Anda: ");
     subPilihan = input.nextInt();
 ```
+
 Menampilkan pilihan untuk menghitung volume atau luas permukaan silinder. Pengguna diminta untuk memilih salah satu dari dua opsi ini.
 
 ```
@@ -238,23 +245,30 @@ if (subPilihan == 1) {
 kondisi untuk menghitung volume atau luas permukaan silinder berdasarkan pilihan pengguna. Memanggil metode yang sesuai dari objek silinder dan menampilkan hasilnya.
 
 # 4️⃣ Case 4 - Bola
+
 mendeklarasikan case 4 untuk Bola.
+
 ```
     System.out.println("=== Bola ===");
     System.out.print("Masukkan jari-jari: ");
     double jariJariBola = input.nextDouble();
 ```
+
 Menampilkan dan meminta input jari-jari bola dari pengguna.
+
 ```
     Calculation bola = new Calculation(jariJariBola);
 ```
+
 Membuat objek bola dari kelas Calculation dengan parameter jari-jari yang dimasukkan oleh pengguna. Ini akan digunakan untuk menghitung volume dan luas permukaan bola.
+
 ```
     System.out.println("1. Hitung Volume");
     System.out.println("2. Hitung Luas Permukaan");
     System.out.print("Pilihan Anda: ");
     subPilihan = input.nextInt();
 ```
+
 Menampilkan pilihan untuk menghitung volume atau luas permukaan bola. Pengguna diminta untuk memilih salah satu dari dua opsi ini.
 
 ```
@@ -268,12 +282,14 @@ if (subPilihan == 1) {
 kondisi untuk menghitung volume atau luas permukaan bola berdasarkan pilihan pengguna. Memanggil metode yang sesuai dari objek bola dan menampilkan hasilnya.
 
 # 5️⃣ Case 5 - Keluar
+
 mendeklarasikan case 5 untuk Keluar.
 
 ```
     System.out.println("Terima kasih telah menggunakan Kalkulator Bangun Ruang!");
     System.exit(0);
 ```
+
 Menampilkan pesan terima kasih kepada pengguna dan menghentikan eksekusi program.
 
 ```
@@ -284,15 +300,18 @@ default:
 Menangani kasus di mana pengguna memasukkan pilihan yang tidak valid. Menampilkan pesan kesalahan dan meminta pengguna untuk mencoba lagi.
 
 ### 📄 Penjelasan Baris per Baris Calculation.java
+
 ```
 package BangunRuang;
 ```
+
 Menyatakan bahwa file ini berada dalam package BangunRuang
 
 ```
 int sisi;
 double panjang, lebar, tinggi, jariJari;
 ```
+
 Mendeklarasikan variabel untuk menyimpan nilai sisi, panjang, lebar, tinggi, dan jari-jari yang akan digunakan dalam perhitungan.
 
 ```
@@ -300,6 +319,7 @@ public Calculation(int sisi) {
     this.sisi = sisi;
 }
 ```
+
 Konstruktor untuk kelas Calculation yang menerima parameter sisi. Ini digunakan untuk menghitung volume dan luas permukaan kubus.
 
 ```
@@ -309,6 +329,7 @@ public Calculation(double panjang, double lebar, double tinggi) {
     this.tinggi = tinggi;
 }
 ```
+
 Konstruktor untuk kelas Calculation yang menerima parameter panjang, lebar, dan tinggi. Ini digunakan untuk menghitung volume dan luas permukaan balok.
 
 ```
@@ -317,6 +338,7 @@ public Calculation(double jariJari, double tinggi) {
     this.tinggi = tinggi;
 }
 ```
+
 Konstruktor untuk kelas Calculation yang menerima parameter jari-jari dan tinggi. Ini digunakan untuk menghitung volume dan luas permukaan silinder.
 
 ```
@@ -324,6 +346,7 @@ public Calculation(double jariJari) {
     this.jariJari = jariJari;
 }
 ```
+
 Konstruktor untuk kelas Calculation yang menerima parameter jari-jari. Ini digunakan untuk menghitung volume dan luas permukaan bola.
 
 ```
@@ -331,6 +354,7 @@ public double hitungVolumeKubus() {
     return Math.pow(sisi, 3);
 }
 ```
+
 Metode untuk menghitung volume kubus dengan rumus sisi^3. Menggunakan fungsi Math.pow untuk menghitung pangkat tiga dari sisi.
 
 ```
@@ -338,46 +362,53 @@ public double hitungLuasPermukaanKubus() {
     return 6 * Math.pow(sisi, 2);
 }
 ```
-Metode untuk menghitung luas permukaan kubus dengan rumus 6 * sisi^2. Menggunakan fungsi Math.pow untuk menghitung pangkat dua dari sisi.
+
+Metode untuk menghitung luas permukaan kubus dengan rumus 6 \* sisi^2. Menggunakan fungsi Math.pow untuk menghitung pangkat dua dari sisi.
 
 ```
 public double hitungVolumeBalok() {
     return panjang * lebar * tinggi;
 }
 ```
-Metode untuk menghitung volume balok dengan rumus panjang * lebar * tinggi.
+
+Metode untuk menghitung volume balok dengan rumus panjang _ lebar _ tinggi.
 
 ```
 public double hitungLuasPermukaanBalok() {
     return 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi);
 }
 ```
-Metode untuk menghitung luas permukaan balok dengan rumus 2 * (panjang * lebar + panjang * tinggi + lebar * tinggi).
+
+Metode untuk menghitung luas permukaan balok dengan rumus 2 _ (panjang _ lebar + panjang _ tinggi + lebar _ tinggi).
 
 ```
 public double hitungVolumeSilinder() {
     return Math.PI * Math.pow(jariJari, 2) * tinggi;
 }
 ```
-Metode untuk menghitung volume silinder dengan rumus π * jari-jari^2 * tinggi. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat dua dari jari-jari.
+
+Metode untuk menghitung volume silinder dengan rumus π _ jari-jari^2 _ tinggi. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat dua dari jari-jari.
 
 ```
 public double hitungLuasPermukaanSilinder() {
     return 2 * Math.PI * jariJari * (jariJari + tinggi);
 }
 ```
-Metode untuk menghitung luas permukaan silinder dengan rumus 2 * π * jari-jari * (jari-jari + tinggi). Menggunakan fungsi Math.PI untuk mendapatkan nilai π.
+
+Metode untuk menghitung luas permukaan silinder dengan rumus 2 _ π _ jari-jari \* (jari-jari + tinggi). Menggunakan fungsi Math.PI untuk mendapatkan nilai π.
 
 ```
 public double hitungVolumeBola() {
     return (4.0 / 3.0) * Math.PI * Math.pow(jariJari, 3);
 }
 ```
-Metode untuk menghitung volume bola dengan rumus (4/3) * π * jari-jari^3. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat tiga dari jari-jari.
+
+Metode untuk menghitung volume bola dengan rumus (4/3) _ π _ jari-jari^3. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat tiga dari jari-jari.
 
 ```
 public double hitungLuasPermukaanBola() {
     return 4.0 * Math.PI * Math.pow(jariJari, 2);
 }
 ```
-Metode untuk menghitung luas permukaan bola dengan rumus 4 * π * jari-jari^2. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat dua dari jari-jari.
+
+Metode untuk menghitung luas permukaan bola dengan rumus 4 _ π _ jari-jari^2. Menggunakan fungsi Math.PI untuk mendapatkan nilai π dan Math.pow untuk menghitung pangkat dua dari jari-jari.
