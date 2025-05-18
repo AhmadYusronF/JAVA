@@ -1,4 +1,4 @@
-package Soal1;
+package UTS;
 
 import java.util.Scanner;
 
@@ -6,9 +6,11 @@ public class MainProgram {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        int pilihan, subPilihan;
+        int pilihan;
         double jariJari, tinggi, lebar, panjang;
+
         ValidasiInput validasi = new ValidasiInput();
+
         do {
             System.out.println("Menu Utama: ");
             System.out.println("1. Kubus");
