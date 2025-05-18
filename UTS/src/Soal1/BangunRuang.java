@@ -55,4 +55,5 @@ public class BangunRuang {
     public double hitungLuasPermukaanBola() {
         return 4.0 * Math.PI * Math.pow(jariJari, 2);
     }
-}
+
+    }
